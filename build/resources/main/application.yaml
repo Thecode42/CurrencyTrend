@@ -1,0 +1,11 @@
+ktor:
+  application:
+    modules:
+      - com.currency.ApplicationKt.module
+  deployment:
+    port: 8080
+api:
+  url_service: "https://api.frankfurter.dev"
+  url_trend2Currency: "/v1/"
+  url_currencies: "/v1/currencies"
+  url_conversion: "/v1/latest"

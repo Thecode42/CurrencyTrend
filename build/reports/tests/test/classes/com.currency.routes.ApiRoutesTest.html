@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.currency.routes.ApiRoutesTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.currency.routes.ApiRoutesTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.currency.routes.html">com.currency.routes</a> &gt; ApiRoutesTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m17.22s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="test getTrend route"></a>
+<h3 class="failures">test getTrend route</h3>
+<span class="code">
+<pre>kotlinx.coroutines.test.UncompletedCoroutinesError: After waiting for 1m, the test body did not run to completion
+	at app//kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$2.invokeSuspend$lambda$0(TestBuilders.kt:354)
+	at app//kotlinx.coroutines.InvokeOnCancelling.invoke(JobSupport.kt:1571)
+	at app//kotlinx.coroutines.JobSupport.notifyCancelling(JobSupport.kt:1604)
+	at app//kotlinx.coroutines.JobSupport.tryMakeCancelling(JobSupport.kt:826)
+	at app//kotlinx.coroutines.JobSupport.makeCancelling(JobSupport.kt:786)
+	at app//kotlinx.coroutines.JobSupport.cancelImpl$kotlinx_coroutines_core(JobSupport.kt:702)
+	at app//kotlinx.coroutines.JobSupport.cancelCoroutine(JobSupport.kt:689)
+	at app//kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:156)
+	at app//kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:505)
+	at app//kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+	at app//kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:105)
+	at java.base@11.0.25/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.OutOfMemoryError: Java heap space
+		at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
+		at io.ktor.server.testing.TestApplicationKt.runTestApplication(TestApplication.kt:393)
+		at io.ktor.server.testing.TestApplicationKt$testApplication$1.invokeSuspend(TestApplication.kt:376)
+		at io.ktor.test.dispatcher.TestCommonKt$runTestWithRealTime$1.invokeSuspend(TestCommon.kt:39)
+		at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:318)
+	Caused by: java.lang.OutOfMemoryError: Java heap space
+		at kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.newFieldSet(FieldSet.java:92)
+		at kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite$ExtendableMessage.&lt;init&gt;(GeneratedMessageLite.java:172)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$ValueParameter.&lt;init&gt;(ProtoBuf.java:20107)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$ValueParameter.&lt;init&gt;(ProtoBuf.java:20082)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$ValueParameter$1.parsePartialFrom(ProtoBuf.java:20200)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$ValueParameter$1.parsePartialFrom(ProtoBuf.java:20195)
+		at kotlin.reflect.jvm.internal.impl.protobuf.CodedInputStream.readMessage(CodedInputStream.java:495)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Constructor.&lt;init&gt;(ProtoBuf.java:14672)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Constructor.&lt;init&gt;(ProtoBuf.java:14614)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Constructor$1.parsePartialFrom(ProtoBuf.java:14726)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Constructor$1.parsePartialFrom(ProtoBuf.java:14721)
+		at kotlin.reflect.jvm.internal.impl.protobuf.CodedInputStream.readMessage(CodedInputStream.java:495)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Class.&lt;init&gt;(ProtoBuf.java:8729)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Class.&lt;init&gt;(ProtoBuf.java:8603)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Class$1.parsePartialFrom(ProtoBuf.java:9006)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Class$1.parsePartialFrom(ProtoBuf.java:9001)
+		at kotlin.reflect.jvm.internal.impl.protobuf.CodedInputStream.readMessage(CodedInputStream.java:495)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$PackageFragment.&lt;init&gt;(ProtoBuf.java:24585)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$PackageFragment.&lt;init&gt;(ProtoBuf.java:24493)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$PackageFragment$1.parsePartialFrom(ProtoBuf.java:24615)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$PackageFragment$1.parsePartialFrom(ProtoBuf.java:24610)
+		at kotlin.reflect.jvm.internal.impl.protobuf.AbstractParser.parsePartialFrom(AbstractParser.java:192)
+		at kotlin.reflect.jvm.internal.impl.protobuf.AbstractParser.parseFrom(AbstractParser.java:209)
+		at kotlin.reflect.jvm.internal.impl.protobuf.AbstractParser.parseFrom(AbstractParser.java:49)
+		at kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$PackageFragment.parseFrom(ProtoBuf.java:24829)
+		at kotlin.reflect.jvm.internal.impl.metadata.builtins.ReadPackageFragmentKt.readBuiltinsPackageFragment(readPackageFragment.kt:16)
+		at kotlin.reflect.jvm.internal.impl.serialization.deserialization.builtins.BuiltInsPackageFragmentImpl$Companion.create(BuiltInsPackageFragmentImpl.kt:37)
+		at kotlin.reflect.jvm.internal.impl.builtins.jvm.JvmBuiltInsPackageFragmentProvider.findPackage(JvmBuiltInsPackageFragmentProvider.kt:62)
+		at kotlin.reflect.jvm.internal.impl.serialization.deserialization.AbstractDeserializedPackageFragmentProvider.fragments$lambda$1(AbstractDeserializedPackageFragmentProvider.kt:35)
+		at kotlin.reflect.jvm.internal.impl.serialization.deserialization.AbstractDeserializedPackageFragmentProvider.accessor$AbstractDeserializedPackageFragmentProvider$lambda0(AbstractDeserializedPackageFragmentProvider.kt)
+		at kotlin.reflect.jvm.internal.impl.serialization.deserialization.AbstractDeserializedPackageFragmentProvider$$Lambda$0.invoke(Unknown Source)
+		at kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager$MapBasedMemoizedFunction.invoke(LockBasedStorageManager.java:578)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">test getTrend route</td>
+<td class="failures">2m17.22s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-12-27 23:22:34.950 [DefaultDispatcher-worker-1] TRACE io.mockk.impl.JvmMockKGateway - Starting JVM MockK implementation. Java version = 11.0.25. 
+2024-12-27 23:22:35.468 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.JvmMockKAgentFactory - Byte buddy agent installed
+2024-12-27 23:22:35.482 [DefaultDispatcher-worker-1] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKDispatcher
+2024-12-27 23:22:35.483 [DefaultDispatcher-worker-1] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap
+2024-12-27 23:22:35.483 [DefaultDispatcher-worker-1] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap$StrongKey
+2024-12-27 23:22:35.483 [DefaultDispatcher-worker-1] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap$WeakKey
+2024-12-27 23:22:35.728 [DefaultDispatcher-worker-1] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for TrendApiService name=#1
+2024-12-27 23:22:35.730 [DefaultDispatcher-worker-1] TRACE i.m.i.i.AbstractMockFactory - Building proxy for TrendApiService hashcode=2f150645
+2024-12-27 23:22:36.007 [DefaultDispatcher-worker-1] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@7f8fc4a9
+2024-12-27 23:22:36.431 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class com.currency.services.TrendApiService itself because it is final.
+2024-12-27 23:22:36.432 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class com.currency.services.TrendApiService via instantiator
+2024-12-27 23:22:36.432 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.currency.services.TrendApiService
+2024-12-27 23:22:36.450 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2024-12-27 23:22:36.467 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.i.instantiation.JvmInstantiator - Building empty instance void
+2024-12-27 23:22:36.468 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class java.lang.Void
+2024-12-27 23:22:36.472 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.i.instantiation.JvmInstantiator - Building empty instance ExchangeRangeRequest
+2024-12-27 23:22:36.472 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.currency.dto.ExchangeRangeRequest
+2024-12-27 23:22:36.630 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.i.i.AbstractMockFactory - Building proxy for ExchangeTrendResponse hashcode=34d6f0ca
+2024-12-27 23:22:36.630 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@2ba3cbf7
+2024-12-27 23:22:36.732 [DefaultDispatcher-worker-1 @coroutine#4] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class com.currency.dto.ExchangeTrendResponse itself because it is final.
+2024-12-27 23:22:36.732 [DefaultDispatcher-worker-1 @coroutine#4] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class com.currency.dto.ExchangeTrendResponse via instantiator
+2024-12-27 23:22:36.732 [DefaultDispatcher-worker-1 @coroutine#4] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.currency.dto.ExchangeTrendResponse
+2024-12-27 23:22:36.763 [DefaultDispatcher-worker-1] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {[Ref(ExchangeRangeRequest@41bc57ff)]=any()}
+2024-12-27 23:22:36.765 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.ChainedCallDetector - Processing call #0: getTrend(ExchangeRangeRequest, Continuation)
+2024-12-27 23:22:36.766 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.ChainedCallDetector - Signature for 0 argument of getTrend(ExchangeRangeRequest, Continuation): [Ref(ExchangeRangeRequest@41bc57ff)]
+2024-12-27 23:22:36.773 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.ChainedCallDetector - Signature for 1 argument of getTrend(ExchangeRangeRequest, Continuation): [Ref(null@2c3b47fe)]
+2024-12-27 23:22:36.775 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.ChainedCallDetector - Suspend function found. Replacing continuation with any() matcher
+2024-12-27 23:22:36.777 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.ChainedCallDetector - Built matcher: TrendApiService(#1).getTrend(any(), any()))
+2024-12-27 23:22:36.781 [DefaultDispatcher-worker-1] TRACE i.m.impl.recording.PermanentMocker - Child search key: TrendApiService(#1).getTrend(any(), any()))
+2024-12-27 23:22:36.783 [DefaultDispatcher-worker-1] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for ExchangeTrendResponse name=child of #1#2
+2024-12-27 23:22:36.783 [DefaultDispatcher-worker-1] TRACE i.m.i.i.AbstractMockFactory - Building proxy for ExchangeTrendResponse hashcode=34d6f0ca
+2024-12-27 23:22:36.783 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class com.currency.dto.ExchangeTrendResponse itself because it is final.
+2024-12-27 23:22:36.784 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class com.currency.dto.ExchangeTrendResponse via instantiator
+2024-12-27 23:22:36.784 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.currency.dto.ExchangeTrendResponse
+2024-12-27 23:22:36.786 [DefaultDispatcher-worker-1] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: TrendApiService(#1).getTrend(any(), any())
+2024-12-27 23:22:36.789 [DefaultDispatcher-worker-1] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2024-12-27 23:22:36.951 [DefaultDispatcher-worker-1] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for HttpClient name=#3
+2024-12-27 23:22:36.951 [DefaultDispatcher-worker-1] TRACE i.m.i.i.AbstractMockFactory - Building proxy for HttpClient hashcode=55f83fd5
+2024-12-27 23:22:36.954 [DefaultDispatcher-worker-1] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@19be7b42
+2024-12-27 23:22:37.072 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class io.ktor.client.HttpClient itself because it is final.
+2024-12-27 23:22:37.073 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class io.ktor.client.HttpClient via instantiator
+2024-12-27 23:22:37.073 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class io.ktor.client.HttpClient
+2024-12-27 23:22:37.076 [DefaultDispatcher-worker-1] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for HttpResponse name=#4
+2024-12-27 23:22:37.077 [DefaultDispatcher-worker-1] TRACE i.m.i.i.AbstractMockFactory - Building proxy for HttpResponse hashcode=4a84826a
+2024-12-27 23:22:37.079 [DefaultDispatcher-worker-1] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@8c492b5
+2024-12-27 23:22:37.117 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Building subclass proxy for class io.ktor.client.statement.HttpResponse with additional interfaces []
+2024-12-27 23:22:37.319 [DefaultDispatcher-worker-1] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class io.ktor.client.statement.HttpResponse via instantiator
+2024-12-27 23:22:37.319 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Skipping instantiation subsclassing class io.ktor.client.statement.HttpResponse$Subclass0 because class is not abstract.
+2024-12-27 23:22:37.319 [DefaultDispatcher-worker-1] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class io.ktor.client.statement.HttpResponse$Subclass0
+2024-12-27 23:22:37.324 [DefaultDispatcher-worker-1] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2024-12-27 23:22:37.495 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.i.i.AbstractMockFactory - Building proxy for HttpClientCall hashcode=20c0cae6
+2024-12-27 23:22:37.495 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@4eb0f398
+2024-12-27 23:22:37.541 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class io.ktor.client.call.HttpClientCall itself because it is not abstract and no additional interfaces specified.
+2024-12-27 23:22:37.542 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class io.ktor.client.call.HttpClientCall via instantiator
+2024-12-27 23:22:37.543 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Skipping instantiation subsclassing class io.ktor.client.call.HttpClientCall because class is not abstract.
+2024-12-27 23:22:37.543 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class io.ktor.client.call.HttpClientCall
+2024-12-27 23:22:37.571 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.i.i.AbstractMockFactory - Building proxy for HttpResponse hashcode=141b32a6
+2024-12-27 23:22:37.571 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Building subclass proxy for class io.ktor.client.statement.HttpResponse with additional interfaces []
+2024-12-27 23:22:37.571 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class io.ktor.client.statement.HttpResponse via instantiator
+2024-12-27 23:22:37.572 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Skipping instantiation subsclassing class io.ktor.client.statement.HttpResponse$Subclass0 because class is not abstract.
+2024-12-27 23:22:37.572 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class io.ktor.client.statement.HttpResponse$Subclass0
+2024-12-27 23:22:37.586 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.i.i.AbstractMockFactory - Building proxy for ByteReadChannel hashcode=2bc779f6
+2024-12-27 23:22:37.586 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@7e497bd7
+2024-12-27 23:22:37.612 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Building subclass proxy for interface io.ktor.utils.io.ByteReadChannel with additional interfaces []
+2024-12-27 23:22:37.630 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for interface io.ktor.utils.io.ByteReadChannel via instantiator
+2024-12-27 23:22:37.631 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Skipping instantiation subsclassing class io.ktor.utils.io.ByteReadChannel$Subclass1 because class is not abstract.
+2024-12-27 23:22:37.631 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class io.ktor.utils.io.ByteReadChannel$Subclass1
+2024-12-27 23:22:37.645 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Source hashcode=6504577b
+2024-12-27 23:22:37.648 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Class interface kotlinx.io.Source is sealed, will use its subclass class kotlinx.io.Buffer to build proxy
+2024-12-27 23:22:37.649 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@2ca95574
+2024-12-27 23:22:37.773 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Taking instance of class kotlinx.io.Buffer itself because it is final.
+2024-12-27 23:22:37.774 [DefaultDispatcher-worker-1 @coroutine#8] TRACE io.mockk.proxy.common.ProxyMaker - Instantiating proxy for class kotlinx.io.Buffer via instantiator
+2024-12-27 23:22:37.774 [DefaultDispatcher-worker-1 @coroutine#8] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlinx.io.Buffer
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Coroutines dump 2024/12/27 23:23:34
+
+Coroutine &quot;coroutine#1&quot;:BlockingCoroutine{Active}@17ad972, state: SUSPENDED
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$2.invokeSuspend(TestBuilders.kt:359)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1.invokeSuspend(TestBuilders.kt:339)
+	at kotlinx.coroutines.test.TestBuildersJvmKt$createTestResult$1.invokeSuspend(TestBuildersJvm.kt:11)
+
+Coroutine TestScope[test started], state: RUNNING (Last suspension stacktrace, not an actual stacktrace)
+	at io.ktor.server.testing.TestApplicationKt$testApplication$1.invokeSuspend(TestApplication.kt:376)
+	at io.ktor.test.dispatcher.TestCommonKt$runTestWithRealTime$1.invokeSuspend(TestCommon.kt:39)
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:318)
+
+Coroutine &quot;kotlinx.coroutines.test runner#2&quot;:StandaloneCoroutine{Active}@1e3e0be8, state: SUSPENDED
+	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:334)
+
+Coroutine &quot;coroutine#8&quot;:BlockingCoroutine{Active}@7f3250f2, state: RUNNING
+	at app//kotlinx.io.Buffer.transferFrom(Buffer.kt:488)
+	at app//io.ktor.utils.io.ByteReadChannelOperationsKt.readRemaining(ByteReadChannelOperations.kt:198)
+	at app//io.ktor.client.call.SavedCallKt.save(SavedCall.kt:72)
+	at app//io.ktor.client.statement.HttpStatement.fetchResponse(HttpStatement.kt:148)
+	at app//io.ktor.client.statement.HttpStatement.execute(HttpStatement.kt:68)
+	at app//com.currency.routes.ApiRoutesTest$test getTrend route$1$4.invokeSuspend(ApiRoutesTest.kt:96)
+	at app//com.currency.routes.ApiRoutesTest$test getTrend route$1$4.invoke(ApiRoutesTest.kt)
+	at app//com.currency.routes.ApiRoutesTest$test getTrend route$1$4.invoke(ApiRoutesTest.kt)
+	at app//io.mockk.impl.eval.RecordedBlockEvaluator$record$block$2$1.invokeSuspend(RecordedBlockEvaluator.kt:28)
+	at app//io.mockk.impl.eval.RecordedBlockEvaluator$record$block$2$1.invoke(RecordedBlockEvaluator.kt)
+	at app//io.mockk.impl.eval.RecordedBlockEvaluator$record$block$2$1.invoke(RecordedBlockEvaluator.kt)
+	at app//io.mockk.InternalPlatformDsl$runCoroutine$1.invokeSuspend(InternalPlatformDsl.kt:23)</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Dec 27, 2024, 11:24:52 PM</p>
+</div>
+</div>
+</body>
+</html>

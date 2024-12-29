@@ -8,68 +8,68 @@
   </a>
 </div>
 
-## About The Project
+## Acerca del Proyecto
 
-`CurrencyTrend` is a backend application built with **Kotlin** and **Ktor** to showcase advanced backend development skills. This application interacts with an external currency API to:
+`CurrencyTrend` es una aplicación desarrollada en **Kotlin** utilizando **Ktor**, diseñada para demostrar habilidades avanzadas en desarrollo backend. La aplicación interactúa con una API externa de datos de divisas para:
 
-- Perform accurate currency conversions.
-- Analyze currency trends over a defined time range.
+- Realizar conversiones precisas entre monedas.
+- Analizar tendencias de una moneda frente a otra durante un período de tiempo definido.
 
-This project serves as a practical demonstration of my expertise in server-side programming and API integrations.
-
----
-
-## Features
-
-- **External API Integration**:
-    - Integrated with `https://api.frankfurter.app` for currency data.
-    - Available endpoints:
-        - `/getTrend`: Calculates currency trends over a date range.
-        - `/getConversion`: Performs currency conversions.
-
-- **JSON Serialization**:
-    - Efficiently handles data using `kotlinx.serialization`.
-
-- **Centralized Configuration**:
-    - Manages properties via `application.conf`.
+Este proyecto sirve como una vitrina práctica de mis conocimientos en programación del lado del servidor y la integración con APIs externas.
 
 ---
 
-## Technologies Used
+## Características
 
-- **Language**: [Kotlin](https://kotlinlang.org/)
+- **Consumo de APIs externas**:
+    - Integración con `https://api.frankfurter.app` para obtener datos de divisas.
+    - Endpoints disponibles:
+        - `/getTrend`: Calcula la tendencia de una moneda en un rango de fechas.
+        - `/getConversion`: Realiza conversiones entre monedas.
+
+- **Serialización y deserialización JSON**:
+    - Uso de `kotlinx.serialization` para manejar datos de forma eficiente.
+
+- **Configuración centralizada**:
+    - Gestión de propiedades a través de `application.conf`.
+
+
+---
+
+## Tecnologías Utilizadas
+
+- **Lenguaje**: [Kotlin](https://kotlinlang.org/)
 - **Framework**: [Ktor](https://ktor.io/)
-- **HTTP Client**: Ktor Client (CIO)
-- **Serialization**: `kotlinx.serialization`
-- **Testing**: [MockK](https://mockk.io/), [Kotlin Test](https://kotlinlang.org/docs/kotlin-test.html)
-- **Configuration**: `application.conf`
+- **Cliente HTTP**: Ktor Client (CIO)
+- **Serialización**: `kotlinx.serialization`
+- **Configuración**: `application.conf`
 
 ---
 
-## Installation
+## Instalación
 
-### Prerequisites
+### Prerrequisitos
 
 1. [JDK 17+](https://adoptium.net/)
 2. [Gradle](https://gradle.org/install/)
 3. [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-### Steps
+### Pasos
 
-1. Clone the repository:
+1. Clona el repositorio:
    ```bash
    git clone https://github.com/Thecode42/CurrencyTrend.git
    cd CurrencyTrend
-2. Start the application:
+2. Inicia la aplicación:
    ```bash
    ./gradlew run
 
-### Usage
-### Available Endpoints
+### Uso
+### Endpoints Disponibles
 
 1. POST /api/getTrend:
-   - **Description:** Calculates a currency trend over a date range.
-     - **Request Body:**
+   - **Descripción:** Calcula la tendencia de una moneda en un rango de fechas.
+     - **Cuerpo de la Solicitud:**
         ```bash
               {
                   "base": "USD",
@@ -77,7 +77,7 @@ This project serves as a practical demonstration of my expertise in server-side 
                   "start_date": "2024-01-01",
                   "end_date": "2024-12-27"
               }
-     - **Response:**
+     - **Respuesta:**
           ```bash
             {
                  "amount": 1.0,
@@ -89,22 +89,22 @@ This project serves as a practical demonstration of my expertise in server-side 
                  "result": "Analysis of USD to CAD exchange rate:\nThe USD has grown against the CAD by 8.50% \nNet Change: 0.11260 CAD per USD."
             }
 2. POST /api/getConversion:
-    - **Description:** Converts an amount from one currency to another.
-        - **Request Body:**
+    - **Descripción:** Convierte un monto de una moneda a otra.
+        - **Cuerpo de la Solicitud:**
            ```bash
                  {
                      "base": "USD",
                      "symbol": "CAD",
                      "amount": 100.00
                  }
-        - **Response:**
+        - **Respuesta:**
              ```bash
                {
                     "base": "USD",
                     "symbol": "CAD",
                     "result": "143.77"
                }
-### Project Structure
+### Estructura del Proyecto
     ```bash
     CurrencyTrend/
     ├── src/
@@ -133,6 +133,6 @@ This project serves as a practical demonstration of my expertise in server-side 
         └── resources/
             └── logback-test.xml
 
-## License
+## Licencia
 
-This project is licensed under the MIT License. Please consult the `LICENSE` file for more details.
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.

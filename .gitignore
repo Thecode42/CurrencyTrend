@@ -79,6 +79,7 @@ Temporary Items
 *.iml
 *.ipr
 *.iws
+.idea/
 /.idea/*
 
 # Exclude non-user-specific stuff
@@ -118,7 +119,8 @@ Temporary Items
 hs_err_pid*
 
 ### Gradle template
-.gradle
+.gradle/
+build/
 
 # Note that you may need to exclude by hand other folders
 # named build if necessary (e.g., in src/)

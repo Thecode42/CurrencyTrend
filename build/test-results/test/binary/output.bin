@@ -1,17 +1,0 @@
-â2024-12-28 21:09:38.305 [DefaultDispatcher-worker-1] TRACE i.ktor.client.plugins.HttpPlainText - Adding Accept-Charset=UTF-8 to http:///
-ß2024-12-28 21:09:38.376 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
-Ä2024-12-28 21:09:38.462 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.104 seconds.
-y2024-12-28 21:09:38.469 [DefaultDispatcher-worker-1 @coroutine#4] INFO  io.ktor.test - Responding at http://localhost:80
-{2024-12-28 21:09:38.470 [DefaultDispatcher-worker-1 @coroutine#4] INFO  io.ktor.test - Responding at https://localhost:443
-t2024-12-28 21:09:38.536 [DefaultDispatcher-worker-3 @request#3] TRACE io.ktor.server.routing.Routing - Trace for []
-/, segment:0 -> SUCCESS @ /
-  /, segment:0 -> SUCCESS @ /
-8    /(method:GET), segment:0 -> SUCCESS @ /(method:GET)
-<  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
-Matched routes:
-$  "" -> "<slash>" -> "(method:GET)"
-Routing resolve result:
-  SUCCESS @ /(method:GET)
-ê2024-12-28 21:09:38.549 [DefaultDispatcher-worker-3 @request#3] TRACE i.k.s.p.c.ContentNegotiation - Skipping response body transformation from String to OutgoingContent for the GET / request because the String type is ignored. See [ContentNegotiationConfig::ignoreType].
-î2024-12-28 21:09:38.592 [DefaultDispatcher-worker-2] TRACE i.k.client.plugins.HttpCallValidator - Validating response for request http://localhost/
-ö2024-12-28 21:09:38.592 [DefaultDispatcher-worker-2] TRACE i.k.c.p.DefaultResponseValidation - Skipping default response validation for http://localhost/

@@ -79,6 +79,7 @@ Temporary Items
 *.iml
 *.ipr
 *.iws
+.idea
 .idea/
 /.idea/*
 
@@ -119,6 +120,7 @@ Temporary Items
 hs_err_pid*
 
 ### Gradle template
+.gradle
 .gradle/
 build/
 
